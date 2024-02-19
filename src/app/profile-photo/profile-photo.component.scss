@@ -1,0 +1,21 @@
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+    margin: auto;
+
+  }
+
+.conatiner{
+  margin: auto;
+  margin-top: 10px;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+// .mat-mdc-form-field + .mat-mdc-form-field {
+//     margin-left: 8px;
+//   }
+
+  ::ng-deep .centered-title {
+    text-align: center;
+  }
