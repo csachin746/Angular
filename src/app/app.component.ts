@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
+  private  number :number = 123456
+
+  get counter(){
+    return this.number
+  }
+
+  set counter(value:number){ 
+    this.number = value;
+    
+  }
+
+  increment(){
+    this.counter++;
+  }
+
+  decrement(){
+    this.counter--;
+  }
 }
+

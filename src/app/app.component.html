@@ -1,5 +1,16 @@
 <app-header></app-header>
 <div class="div">
   <router-outlet></router-outlet>
+  <app-child  [myCounter] = "counter"></app-child>
+  <div class="container btn">
+    <div class="div">
+      <button  mat-raised-button color="primary"(click)="increment">Increment</button>
+    </div>
+    <div class="div">
+      <button mat-stroked-button color="primary" (click)="decrement">Decrement</button>
+    </div>
+  </div>
+
 </div>
 <app-footer></app-footer>
+

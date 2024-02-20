@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/module/material/material.module';
 
@@ -10,7 +10,13 @@ import { MaterialModule } from 'src/app/module/material/material.module';
   styleUrls: ['./profile.component.scss']
 })
 
-export class ProfileComponent {
+export class ProfileComponent implements OnChanges {
+  @Input() myCounter!:string;
   widthValue = 300;
   heightValue = 300;
+
+  ngOnChanges(changes: SimpleChanges): void {
+  console.log('ngOnChanges', changes);
+    
+  }
 }
