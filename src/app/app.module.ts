@@ -9,6 +9,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import {} from '@angular/material/core';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { ChildComponent } from './components/child/child.component';
+import { TestComponent } from './components/selector /test/test.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ChildComponent } from './components/child/child.component';
     HeaderComponent,
     FooterComponent,
     ChildComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
