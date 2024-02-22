@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/module/material/material.module';
 
@@ -7,7 +7,9 @@ import { MaterialModule } from 'src/app/module/material/material.module';
   standalone: true,
   imports: [CommonModule ,MaterialModule],
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  styleUrls: ['./profile.component.scss'],
+  encapsulation: ViewEncapsulation.Emulated
+
 })
 
 export class ProfileComponent implements OnChanges {
