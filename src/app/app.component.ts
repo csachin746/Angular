@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 })
 export class AppComponent {
+  @Output() customEvent = new EventEmitter<string>();
+
   title = 'Angular';
   private  number :number = 123456
 
@@ -21,6 +23,8 @@ export class AppComponent {
   }
 
   increment(){
+    const eventData = 'Hello from custom event!';
+    this.customEvent.emit(eventData);
     this.counter++;
   }
 

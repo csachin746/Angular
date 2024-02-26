@@ -10,6 +10,7 @@ import {} from '@angular/material/core';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { ChildComponent } from './components/child/child.component';
 import { TestComponent } from './components/selector /test/test.component';
+import { CustomSliderComponent } from './components/custom-slider/custom-slider.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TestComponent } from './components/selector /test/test.component';
     FooterComponent,
     ChildComponent,
     TestComponent,
+    CustomSliderComponent,
   ],
   imports: [
     BrowserModule,

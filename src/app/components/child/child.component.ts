@@ -6,6 +6,11 @@ import { Component, Input, OnChanges, SimpleChange, SimpleChanges } from '@angul
   styleUrls: ['./child.component.scss']
 })
 export class ChildComponent implements OnChanges{
+  eventData: string | undefined;
+
+  handleCustomEvent(data: string) {
+    this.eventData = data;
+  }
   @Input() myCounter!:number;
   public changeLog: string[] = []
   
