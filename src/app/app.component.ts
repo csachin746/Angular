@@ -19,7 +19,6 @@ export class AppComponent {
 
   set counter(value:number){ 
     this.number = value;
-    
   }
 
   increment(){

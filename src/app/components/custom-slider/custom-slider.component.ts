@@ -7,7 +7,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class CustomSliderComponent {
   @Output() customEvent = new EventEmitter<string>();
-
   // @Input() value = 0;
 
   triggerCustomEvent() {
@@ -19,7 +18,4 @@ export class CustomSliderComponent {
 
 // Input transforms
 @Input({transform: toString}) label = '';
-
-
-
 }

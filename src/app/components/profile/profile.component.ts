@@ -9,7 +9,6 @@ import { MaterialModule } from 'src/app/module/material/material.module';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
   encapsulation: ViewEncapsulation.Emulated
-
 })
 
 export class ProfileComponent implements OnChanges {
@@ -18,7 +17,6 @@ export class ProfileComponent implements OnChanges {
   heightValue = 300;
 
   ngOnChanges(changes: SimpleChanges): void {
-  console.log('ngOnChanges', changes);
-    
+  console.log('ngOnChanges', changes); 
   }
 }
